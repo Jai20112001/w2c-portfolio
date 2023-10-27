@@ -1,0 +1,667 @@
+/* --------------------------------------------------------global------------------------------------------------------- */
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+:root {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+:root a {
+    text-decoration: none;
+}
+
+:root ul {
+    list-style: none;
+}
+
+/* -------------------------------------------------------global ends--------------------------------------------------- */
+
+/* -------------------------------------------------------------header-------------------------------------------- */
+
+a {
+    text-decoration: none;
+  }
+  
+  .header-container {
+    height: 8vh;
+    width: 100%;
+    background-color: #051556;
+  }
+  
+  .header-inner-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .header-info a,
+  i {
+    color: white;
+  }
+  
+  .header-social-icons i:hover {
+    color: #f2910a;
+    transition: 0.5s;
+  }
+  
+  .header-info {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+  
+  .header-social-icons {
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.3rem;
+  }  
+
+/* -------------------------------------------------------------header completed ---------------------------------- */
+
+/* -----------------------------------------------------navbar---------------------------------------------------- */
+
+a {
+    text-decoration: none;
+  }
+  
+  nav {
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+  }
+  
+  .navbar-container {
+    height: 8.5vh;
+    width: 100%;
+    background-color: #f7f7f8;
+    box-shadow: 0px 5px 10px rgb(161, 161, 161);
+  }
+  
+  .navbar-inner-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .navbar-inner-container:hover {
+    overflow: visible;
+  }
+  
+  .logo {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 130px;
+    width: 30%;
+  }
+  
+  .nav-links {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+  
+  .nav-links a {
+    color: #e14d2a;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .wrapper {
+    height: 80%;
+    padding-top: 17px;
+    border: none;
+    background-color: transparent;
+    color: #e14d2a;
+    font-size: 1.1rem;
+    margin: 0px -40px;
+    cursor: pointer;
+  }
+  
+  .menu-content {
+    height: 17.5vh;
+    width: 110%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transform: translateY(16%);
+    background-color: #f7f7f8;
+    line-height: 2;
+    padding: 5% 25%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #5e5e5e;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .menu-content a {
+    color: #383e56;
+  }
+  
+  .wrapper:hover {
+    color: #f2910a;
+    transition: 0.3s linear;
+  }
+  
+  .menu:hover .menu-content {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .menu-content,
+  .nav-links a:hover {
+    color: #f2910a;
+    transition: 0.3s linear;
+  }
+  
+  .Service-content {
+    height: 26.5vh;
+    width: 110%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transform: translateY(10.9%);
+    background-color: #f7f7f8;
+    line-height: 2;
+    padding: 5% 25%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #5e5e5e;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .Service-content a {
+    color: #383e56;
+  }
+  
+  .wrapper:hover {
+    color: #f2910a;
+    transition: 0.3s linear;
+  }
+  
+  .wrapper:hover .Service-content {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .Service-content,
+  .nav-links a:hover {
+    color: #f2910a;
+    transition: 0.3s linear;
+  }
+  
+
+/*------------------------------------------------- navbar ends------------------------------------------------------ */
+
+/* --------------------------------------------------section--------------------------------------------------------- */
+
+section {
+    width: 100%;
+    height: 100%;
+    background: url(pic/back-img.jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #f2910a;
+    opacity: 0.5;
+}
+
+.head {
+    text-align: center;
+    align-items: center;
+    margin: 150px;
+}
+
+.head h1 {
+    color: white;
+    position: relative;
+    font-weight: 500;
+    font-size: 60px;
+}
+
+.head h5 {
+    color: white;
+    border-radius: 10px;
+    background-color: black;
+    position: relative;
+    width: 200px;
+    height: 40px;
+    margin: 10px 500px;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    display: inline-flex;
+    opacity: 0.4;
+}
+
+/* --------------------------------------------------------section end------------------------------------------------------ */
+
+/* --------------------------------------------------------paragraph-------------------------------------------------------- */
+
+.paragraph {
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+.paragraph p.big {
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.paragraph p.small {
+    font-weight: 500;
+    font-size: 45px;
+    margin-top: -40px;
+}
+
+/* -----------------------------------------------------paragraph end-------------------------------------------------------------- */
+
+/* -----------------------------------------------------gallary---------------------------------------------------------------------- */
+
+.gallary {
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.course {
+    display: flex;
+    justify-content: center;
+}
+
+.course span {
+    margin-right: 5%;
+    color: red;
+    font-weight: bold;
+    text-shadow: #000000 1.2px 1px 2px;
+}
+
+
+.course span:hover {
+    color: orange;
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+.tab-content {
+    display: none;
+}
+
+.row .col .tab-content.active {
+    display: block;
+}
+
+.row {
+    width: 100%;
+    height: 100%;
+    margin-top: 3%;
+}
+
+.col {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.portfolio-contents {
+    height: 300px;
+    width: 450px;
+    overflow: hidden;
+    margin: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: darkslategray 8px 8px 10px;
+}
+
+.portfolio-contents:hover {
+    transform: translateY(-8px);
+}
+
+.portfolio-contents .inner {
+    width: 400px;
+    height: 80px;
+    background-color: #eff3d7;
+    position: absolute;
+    bottom: 0;
+    z-index: 1000;
+    transition: 0.8s;
+    opacity: 0;
+    display: flex;
+    box-shadow: #000000 5px 8px 10px;
+}
+
+.column1 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.column2 {
+    margin: 5%;
+    cursor: pointer;
+}
+
+.column2:hover {
+    color: red;
+}
+
+.row .portfolio-contents img {
+    width: 450px;
+    height: 300px;
+    justify-content: space-evenly;
+}
+
+.portfolio-contents:hover .inner {
+    opacity: 0.8;
+    transform: translateY(-30px);
+    background-color: whitesmoke;
+}
+
+.portfolio-contents h2 {
+    margin-left: 8%;
+    margin-top: 8px;
+}
+
+.portfolio-contents h4 {
+    margin-left: 12%;
+    margin-top: -15px;
+}
+
+.portfolio-contents:hover {
+    transform: translateY(-8px);
+}
+
+/* --------------------------------------------------------gallery end------------------------------------------------ */
+
+/* --------------------------------------------------------footer------------------------------------------------------ */
+
+footer {
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    justify-content: space-evenly;
+    background: linear-gradient(rgba(3, 10, 50, 0.5), rgba(3, 10, 50, 0.744)), url(pic/footer.jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ----------------------------------------------------------box1----------------------------------------------------------- */
+
+.box1 {
+    height: 100%;
+    width: 30%;
+
+}
+
+.box1 img {
+    width: 25vh;
+    height: 25vh;
+    cursor: pointer;
+}
+
+.box1 h1 {
+    color: #f2910a;
+    font-weight: 600;
+    font-size: 33px;
+}
+
+.box1 span {
+    color: #e14d2a;
+}
+
+.box1 .lside1 {
+    color: white;
+    margin: 10% 0%;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.lside1 h3 {
+    text-align: center;
+}
+
+.lside1 span {
+    color: white;
+}
+
+.box1 .lside2 {
+    color: white;
+    margin: 10% 0%;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.lside2 h3 {
+    text-align: center;
+}
+
+.lside2 span {
+    color: white;
+}
+
+.box1 .lside3 {
+    color: white;
+    margin: 10% 0%;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.lside3 h3 {
+    text-align: center;
+}
+
+.lside3 span {
+    color: white;
+}
+
+/* -------------------------------------------------------------------box1 end---------------------------------------------------------- */
+
+/* -------------------------------------------------------------------box2-------------------------------------------------------------- */
+
+.box2 {
+    height: 100%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.box2 h1 {
+    color: #f2910a;
+    font-weight: 600;
+    font-size: 33px;
+    margin: 10% 0% 5% 0%;
+}
+
+.box2 h2 {
+    color: #f2910a;
+    font-weight: 600;
+    font-size: 33px;
+    margin: -25% 0% 5% 0%;
+}
+
+.box2 span {
+    color: #e14d2a;
+}
+
+.head-office {
+    height: 60vh;
+    display: flex;
+    margin: 5% 0%;
+}
+
+.head-office .icons .icon {
+    align-items: center;
+    margin: 120%;
+}
+
+.head-office .icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    height: 70%;
+    width: 10%;
+    margin: 0% 5% 10% 5%;
+}
+
+.head-office .social {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.head-office .social h4 {
+    margin: 2% 0% 0% 0%;
+}
+
+.branch-office {
+    height: 150vh;
+    display: flex;
+}
+
+.branch-office .icons .icon {
+    align-items: center;
+    margin: 100%;
+}
+
+.branch-office .icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    height: 100%;
+    width: 10%;
+    margin: 0% 5% 0% 5%;
+}
+
+.branch-office .social {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.end {
+    margin: 0% 25% 3% 25%;
+    text-align: center;
+    align-items: center;
+    color: white;
+    transform: translateX(-50%);
+}
+
+.end a {
+    color: #ff0000;
+}
+
+.end a:hover {
+    color: #f2910a;
+}
+
+/* -------------------------------------------------------------------box2 end----------------------------------------------------- */
+
+/* -------------------------------------------------------------------box3--------------------------------------------------------- */
+
+.box3 {
+    height: 100%;
+    width: 15%;
+}
+
+.box3 h1 {
+    color: #f2910a;
+    font-weight: 600;
+    font-size: 33px;
+    margin: 20% 0%;
+}
+
+.box3 span {
+    color: #e14d2a;
+}
+
+.box3 .link {
+    display: flex;
+    flex-direction: column;
+}
+
+.link a {
+    color: white;
+    margin: 5% 0%;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.link a:hover {
+    color: red;
+}
+
+.link a:hover big {
+    color: red;
+}
+
+.link span {
+    color: yellow;
+}
+
+.box3 .img1 {
+    width: 100%;
+    margin: 15% 0%;
+}
+
+.box3 .img2 {
+    width: 115%;
+    margin: 0% -8%;
+    cursor: pointer;
+}
+
+/* ---------------------------------------------------------------------box3 end------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------footer closed--------------------------------------------------------- */
